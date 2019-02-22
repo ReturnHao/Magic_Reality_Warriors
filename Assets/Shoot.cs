@@ -4,34 +4,6 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-    CameraSpacePoint QuaternionToEuler(Vector4 q) // Z-Y-X Euler angles
-    {
-        CameraSpacePoint euler = { 0 };
-        const double Epsilon = 0.0009765625f;
-        const double Threshold = 0.5f - Epsilon;
-
-        double TEST = q.w * q.y - q.x * q.z;
-
-        if (TEST < -Threshold || TEST > Threshold) // 奇异姿态,俯仰角为±90°
-        {
-            int sign = Sign(TEST);
-
-            euler.Z = -2 * sign * (double)atan2(q.x, q.w); // yaw
-
-            euler.Y = sign * (PI / 2.0); // pitch
-
-            euler.X = 0; // roll
-
-        }
-        else
-        {
-            euler.X = atan2(2 * (q.y * q.z + q.w * q.x), q.w * q.w - q.x * q.x - q.y * q.y + q.z * q.z);
-            euler.Y = asin(-2 * (q.x * q.z - q.w * q.y));
-            euler.Z = atan2(2 * (q.x * q.y + q.w * q.z), q.w * q.w + q.x * q.x - q.y * q.y - q.z * q.z);
-        }
-
-        return euler;
-    }
     public GameObject bullet;
     public float speed = 5f;
 
