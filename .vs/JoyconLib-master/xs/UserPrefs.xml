@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{BEBE5A31-8879-5BF4-4909-3161BDD2BBF4}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Shoot.cs">
+    <Files>
+      <File FileName="Assets/Shoot.cs" Line="7" Column="21" />
+      <File FileName="Assets/JoyconLib_scripts/Joycon.cs" Line="241" Column="33" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
